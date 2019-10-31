@@ -80,13 +80,11 @@
 		BE4B3C97236B3E0F00CF5CA7 /* skautis-material */ = {
 			isa = PBXGroup;
 			children = (
-				BE4B3CBA236B3E2100CF5CA7 /* skautis-material.entitlements */,
 				BE4B3C98236B3E0F00CF5CA7 /* AppDelegate.swift */,
 				BE4B3C9A236B3E0F00CF5CA7 /* SceneDelegate.swift */,
-				BE4B3C9C236B3E0F00CF5CA7 /* ContentView.swift */,
-				BE4B3C9E236B3E1300CF5CA7 /* Assets.xcassets */,
-				BE4B3CA3236B3E1300CF5CA7 /* LaunchScreen.storyboard */,
-				BE4B3CA6236B3E1300CF5CA7 /* Info.plist */,
+				BE4B3CBE236B40DF00CF5CA7 /* Sluzby */,
+				BE4B3CBC236B40BD00CF5CA7 /* Sceny */,
+				BE4B3CBD236B40C700CF5CA7 /* Zdroje */,
 				BE4B3CA0236B3E1300CF5CA7 /* Preview Content */,
 			);
 			path = "skautis-material";
@@ -107,6 +105,32 @@
 				BE4B3CB1236B3E1300CF5CA7 /* Info.plist */,
 			);
 			path = "skautis-materialTests";
+			sourceTree = "<group>";
+		};
+		BE4B3CBC236B40BD00CF5CA7 /* Sceny */ = {
+			isa = PBXGroup;
+			children = (
+				BE4B3C9C236B3E0F00CF5CA7 /* ContentView.swift */,
+			);
+			path = Sceny;
+			sourceTree = "<group>";
+		};
+		BE4B3CBD236B40C700CF5CA7 /* Zdroje */ = {
+			isa = PBXGroup;
+			children = (
+				BE4B3CBA236B3E2100CF5CA7 /* skautis-material.entitlements */,
+				BE4B3CA6236B3E1300CF5CA7 /* Info.plist */,
+				BE4B3C9E236B3E1300CF5CA7 /* Assets.xcassets */,
+				BE4B3CA3236B3E1300CF5CA7 /* LaunchScreen.storyboard */,
+			);
+			path = Zdroje;
+			sourceTree = "<group>";
+		};
+		BE4B3CBE236B40DF00CF5CA7 /* Sluzby */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sluzby;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
