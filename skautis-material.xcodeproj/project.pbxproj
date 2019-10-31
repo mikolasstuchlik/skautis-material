@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		BE4B3CA2236B3E1300CF5CA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4B3CA1236B3E1300CF5CA7 /* Preview Assets.xcassets */; };
 		BE4B3CA5236B3E1300CF5CA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4B3CA3236B3E1300CF5CA7 /* LaunchScreen.storyboard */; };
 		BE4B3CB0236B3E1300CF5CA7 /* skautis_materialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B3CAF236B3E1300CF5CA7 /* skautis_materialTests.swift */; };
+		BEFF9F72236B419E005902A5 /* XMLParsing in Frameworks */ = {isa = PBXBuildFile; productRef = BEFF9F71236B419E005902A5 /* XMLParsing */; };
+		BEFF9F78236B4261005902A5 /* FTAPIKit in Frameworks */ = {isa = PBXBuildFile; productRef = BEFF9F77236B4261005902A5 /* FTAPIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFF9F78236B4261005902A5 /* FTAPIKit in Frameworks */,
+				BEFF9F72236B419E005902A5 /* XMLParsing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +153,10 @@
 			dependencies = (
 			);
 			name = "skautis-material";
+			packageProductDependencies = (
+				BEFF9F71236B419E005902A5 /* XMLParsing */,
+				BEFF9F77236B4261005902A5 /* FTAPIKit */,
+			);
 			productName = "skautis-material";
 			productReference = BE4B3C95236B3E0F00CF5CA7 /* skautis-material.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +207,10 @@
 				Base,
 			);
 			mainGroup = BE4B3C8C236B3E0F00CF5CA7;
+			packageReferences = (
+				BEFF9F70236B419E005902A5 /* XCRemoteSwiftPackageReference "XMLParsing" */,
+				BEFF9F76236B4261005902A5 /* XCRemoteSwiftPackageReference "FTAPIKit" */,
+			);
 			productRefGroup = BE4B3C96236B3E0F00CF5CA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -505,6 +517,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEFF9F70236B419E005902A5 /* XCRemoteSwiftPackageReference "XMLParsing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mikolasstuchlik/XMLParsing";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		BEFF9F76236B4261005902A5 /* XCRemoteSwiftPackageReference "FTAPIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thefuntasty/FTAPIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEFF9F71236B419E005902A5 /* XMLParsing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEFF9F70236B419E005902A5 /* XCRemoteSwiftPackageReference "XMLParsing" */;
+			productName = XMLParsing;
+		};
+		BEFF9F77236B4261005902A5 /* FTAPIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEFF9F76236B4261005902A5 /* XCRemoteSwiftPackageReference "FTAPIKit" */;
+			productName = FTAPIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE4B3C8D236B3E0F00CF5CA7 /* Project object */;
 }
